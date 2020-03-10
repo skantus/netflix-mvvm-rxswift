@@ -7,7 +7,7 @@ extension LoginViewController {
         img.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         img.contentMode = .scaleAspectFit
         img.clipsToBounds = true
-        img.image = #imageLiteral(resourceName: "firebase-logo")
+        img.image = UIImage(named: "logo")
         img.center.x = view.center.x
         img.center.y = 200
         return img

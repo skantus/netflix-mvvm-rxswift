@@ -7,14 +7,13 @@
 //
 
 import UIKit
-import SwiftVideoBackground
 import FirebaseAuth
 
 class ViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        view.backgroundColor = .white
+        view.backgroundColor = .black
         navigationController?.setNavigationBarHidden(true, animated: animated)
         self.setNeedsStatusBarAppearanceUpdate()
         
@@ -22,8 +21,7 @@ class ViewController: UIViewController {
             navigationController?.pushViewController(TabBarController(), animated: true)
             return
         }
-        
-        try? VideoBackground.shared.play(view: view, videoName: "video-landing", videoType: "mp4")
+
         view.addSubview(signInButton())
     }
     

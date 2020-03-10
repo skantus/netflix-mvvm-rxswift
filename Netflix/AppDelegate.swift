@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  Pulse
-//
-//  Created by Alejo Castaño on 01/03/2020.
-//  Copyright © 2020 Alejo Castaño. All rights reserved.
-//
-
 import UIKit
 import Firebase
 

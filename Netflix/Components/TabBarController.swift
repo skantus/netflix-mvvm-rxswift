@@ -1,11 +1,3 @@
-//
-//  TabBarController.swift
-//  Pulse
-//
-//  Created by Alejo Castaño on 08/03/2020.
-//  Copyright © 2020 Alejo Castaño. All rights reserved.
-//
-
 import UIKit
 
 class TabBarController: UITabBarController {

@@ -952,7 +952,6 @@ PODS:
   - PromisesObjC (1.2.8)
   - Protobuf (3.11.4)
   - SnapKit (5.0.1)
-  - SwiftVideoBackground (3.4.0)
 
 DEPENDENCIES:
   - BMPlayer
@@ -966,7 +965,6 @@ DEPENDENCIES:
   - Firebase/RemoteConfig
   - GoogleSignIn
   - MaterialComponents
-  - SwiftVideoBackground
 
 SPEC REPOS:
   trunk:
@@ -1011,7 +1009,6 @@ SPEC REPOS:
     - PromisesObjC
     - Protobuf
     - SnapKit
-    - SwiftVideoBackground
 
 SPEC CHECKSUMS:
   abseil: 18063d773f5366ff8736a050fe035a28f635fd27
@@ -1055,8 +1052,7 @@ SPEC CHECKSUMS:
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
   Protobuf: 176220c526ad8bd09ab1fb40a978eac3fef665f7
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
-  SwiftVideoBackground: 826e0567c737ded2a211aa309e9951c643695e8f
 
-PODFILE CHECKSUM: 5b4a6a2f59aa2ef0083ce45d543f8086a624d17c
+PODFILE CHECKSUM: 0647cc1e83f7cbf802a89d5a325ab27314b297e2
 
 COCOAPODS: 1.8.4
