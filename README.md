@@ -1,4 +1,4 @@
-# Swift Pulse 🍫
+# Ntflix 🍫
 
-iOS application, written in Swift and Firebase.
+Clone of Netflix made in Swift and Firebase.
 
