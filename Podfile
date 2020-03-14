@@ -17,4 +17,5 @@ target 'Netflix' do
   pod 'GoogleSignIn'
   pod 'BMPlayer'
   pod 'MaterialComponents'
+  pod 'Onboard'
 end

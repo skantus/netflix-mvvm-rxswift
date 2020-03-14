@@ -8,29 +8,25 @@
 
 import UIKit
 import FirebaseAuth
+import Onboard
 
 class ViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        view.backgroundColor = .black
+        // view.backgroundColor = .black
         navigationController?.setNavigationBarHidden(true, animated: animated)
         self.setNeedsStatusBarAppearanceUpdate()
         
         if let _ = Auth.auth().currentUser {
-            navigationController?.pushViewController(TabBarController(), animated: true)
+            navigationController?.pushViewController(TabBarController(), animated: false)
             return
         }
-
-        view.addSubview(signInButton())
+        navigationController?.pushViewController(OnboardingController(), animated: false)
     }
-    
+
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
-    }
-
-    @objc func navigateToSignInView() {
-        navigationController?.pushViewController(LoginViewController(), animated: true)
     }
 
     override func didReceiveMemoryWarning() {

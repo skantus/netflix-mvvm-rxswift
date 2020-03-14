@@ -10,6 +10,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         
+        window?.rootViewController?.view.backgroundColor = .black
+        
         // MARK: Build the main UIView programmatically
         let viewController = ViewController()
         let navigationController = UINavigationController(rootViewController: viewController)

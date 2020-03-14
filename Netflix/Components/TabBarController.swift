@@ -3,7 +3,7 @@ import UIKit
 class TabBarController: UITabBarController {
     
     override func viewDidLoad() {
-        view.backgroundColor = .white
+        view.backgroundColor = .black
         
         let tabItemOne = UITabBarItem()
         tabItemOne.title = "Home"

@@ -49,11 +49,12 @@ extension LoginViewController {
     
     func signInButton() -> UIButton {
         let button = LoadingButton()
-        button.frame = CGRect(x: 0, y: 0, width: self.view!.bounds.width * 0.9, height: 50)
-        button.backgroundColor = .systemBlue
+        button.frame = CGRect(x: 0, y: 0, width: view!.bounds.width * 0.9, height: 50)
+        button.backgroundColor = .red
+        button.titleLabel?.font = UIFont(name: "Arial", size: 15)
         button.setTitle("Sign In", for: .normal)
         button.setTitleColor(UIColor.white, for: .normal)
-        button.layer.cornerRadius = 5
+        button.layer.cornerRadius = 3
         button.center.x = view.center.x
         button.center.y = 440
         button.addTarget(self, action: #selector(onSignInPress), for: .touchUpInside)
@@ -63,11 +64,11 @@ extension LoginViewController {
     func navigationBar() -> UINavigationBar{
         let screenSize: CGRect = UIScreen.main.bounds        
         let navBar = UINavigationBar(frame: CGRect(x: 0, y: UIDevice.isIphoneX ? 50 : 20, width: Int(screenSize.width), height: 44))
-        navBar.tintColor = .darkGray
+        navBar.tintColor = .white
         
         UINavigationBar.appearance().shadowImage = UIImage()
         
-        navBar.barTintColor = .white
+        navBar.barTintColor = .black
         navBar.isTranslucent = false
         let navigationItem = UINavigationItem(title: "")
         
@@ -75,15 +76,15 @@ extension LoginViewController {
         // let buttonItem = UIBarButtonItem(image: icon, style: UIBarButtonItem.Style.done, target: nil, action: #selector(goBack))
         // let buttonItem = UIBarButtonItem(title: "Go back", style: UIBarButtonItem.Style.done, target: self, action: #selector(goBack))
         
-        navigationItem.leftBarButtonItem  = UIBarButtonItem(barButtonSystemItem: .close ,target: nil, action: #selector(goBack))
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Sign up", style: .plain, target: self, action: #selector(goBack))
+        navigationItem.leftBarButtonItem  = UIBarButtonItem(barButtonSystemItem: .cancel ,target: nil, action: #selector(goBack))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Ayuda", style: .plain, target: self, action: nil)
         
         navBar.setItems([navigationItem], animated: false)
         return navBar
     }
     
     func setupContentView() {
-        view.backgroundColor = .white
+        view.backgroundColor = .black
         view.addSubview(navigationBar())
         view.addSubview(logoView())
         view.addSubview(emailTextField())

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A055E94CFBCB5EAB42F5528C /* Pods_Netflix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8445757D1C2DE3D091BD0060 /* Pods_Netflix.framework */; };
+		A179066B241991FF00A169C2 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179066A241991FF00A169C2 /* Image.swift */; };
+		A1AB6C54241C44DD00323E75 /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AB6C53241C44DD00323E75 /* OnboardingController.swift */; };
+		A1AB6C56241C465000323E75 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AB6C55241C465000323E75 /* OnboardingView.swift */; };
 		A1D2EDBE241841F500024CD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D2EDBD241841F500024CD3 /* AppDelegate.swift */; };
 		A1D2EDC0241841F500024CD3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D2EDBF241841F500024CD3 /* SceneDelegate.swift */; };
 		A1D2EDC2241841F500024CD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D2EDC1241841F500024CD3 /* ViewController.swift */; };
@@ -28,12 +31,18 @@
 		A1D2EDF62418456500024CD3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D2EDE92418456500024CD3 /* HomeView.swift */; };
 		A1D2EDF72418456500024CD3 /* ViewControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D2EDEA2418456500024CD3 /* ViewControllerView.swift */; };
 		A1D2EDF92418457800024CD3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1D2EDF82418457800024CD3 /* GoogleService-Info.plist */; };
+		A1D2EE1D24184DC300024CD3 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1D2EE1A24184DC200024CD3 /* Lato-Regular.ttf */; };
+		A1D2EE1E24184DC300024CD3 /* Lato-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1D2EE1B24184DC300024CD3 /* Lato-Heavy.ttf */; };
+		A1D2EE1F24184DC300024CD3 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1D2EE1C24184DC300024CD3 /* Lato-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6F0AA26BEA945023A50694C4 /* Pods-Netflix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Netflix.debug.xcconfig"; path = "Target Support Files/Pods-Netflix/Pods-Netflix.debug.xcconfig"; sourceTree = "<group>"; };
 		838099E70E970C46CC95A8CC /* Pods-Netflix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Netflix.release.xcconfig"; path = "Target Support Files/Pods-Netflix/Pods-Netflix.release.xcconfig"; sourceTree = "<group>"; };
 		8445757D1C2DE3D091BD0060 /* Pods_Netflix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Netflix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A179066A241991FF00A169C2 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		A1AB6C53241C44DD00323E75 /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
+		A1AB6C55241C465000323E75 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		A1D2EDBA241841F500024CD3 /* Netflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Netflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1D2EDBD241841F500024CD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1D2EDBF241841F500024CD3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +65,9 @@
 		A1D2EDE92418456500024CD3 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A1D2EDEA2418456500024CD3 /* ViewControllerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerView.swift; sourceTree = "<group>"; };
 		A1D2EDF82418457800024CD3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A1D2EE1A24184DC200024CD3 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		A1D2EE1B24184DC300024CD3 /* Lato-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Heavy.ttf"; sourceTree = "<group>"; };
+		A1D2EE1C24184DC300024CD3 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,11 +112,12 @@
 		A1D2EDBC241841F500024CD3 /* Netflix */ = {
 			isa = PBXGroup;
 			children = (
+				A1D2EE1924184DB300024CD3 /* Fonts */,
 				A1D2EDD72418456200024CD3 /* Common */,
-				A1D2EDE22418456400024CD3 /* Components */,
 				A1D2EDE72418456500024CD3 /* Views */,
-				A1D2EDBD241841F500024CD3 /* AppDelegate.swift */,
+				A1D2EDE22418456400024CD3 /* Components */,
 				A1D2EDBF241841F500024CD3 /* SceneDelegate.swift */,
+				A1D2EDBD241841F500024CD3 /* AppDelegate.swift */,
 				A1D2EDC1241841F500024CD3 /* ViewController.swift */,
 				A1D2EDC3241841F500024CD3 /* Main.storyboard */,
 				A1D2EDC6241841F800024CD3 /* Assets.xcassets */,
@@ -140,6 +153,7 @@
 				A1D2EDDB2418456200024CD3 /* Window.swift */,
 				A1D2EDDC2418456200024CD3 /* Device.swift */,
 				A1D2EDDD2418456200024CD3 /* Button.swift */,
+				A179066A241991FF00A169C2 /* Image.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -163,10 +177,11 @@
 		A1D2EDE22418456400024CD3 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				A1D2EDE62418456400024CD3 /* TabBarController.swift */,
+				A1AB6C53241C44DD00323E75 /* OnboardingController.swift */,
+				A1D2EDE52418456400024CD3 /* LoginViewController.swift */,
 				A1D2EDE32418456400024CD3 /* HomeController.swift */,
 				A1D2EDE42418456400024CD3 /* DownloadsController.swift */,
-				A1D2EDE52418456400024CD3 /* LoginViewController.swift */,
-				A1D2EDE62418456400024CD3 /* TabBarController.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -174,11 +189,22 @@
 		A1D2EDE72418456500024CD3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A1AB6C55241C465000323E75 /* OnboardingView.swift */,
 				A1D2EDE82418456500024CD3 /* LoginView.swift */,
 				A1D2EDE92418456500024CD3 /* HomeView.swift */,
 				A1D2EDEA2418456500024CD3 /* ViewControllerView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		A1D2EE1924184DB300024CD3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A1D2EE1C24184DC300024CD3 /* Lato-Bold.ttf */,
+				A1D2EE1B24184DC300024CD3 /* Lato-Heavy.ttf */,
+				A1D2EE1A24184DC200024CD3 /* Lato-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		AC54BF1A5DB0A8EB1C765A80 /* Frameworks */ = {
@@ -250,8 +276,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1D2EE1F24184DC300024CD3 /* Lato-Bold.ttf in Resources */,
+				A1D2EE1E24184DC300024CD3 /* Lato-Heavy.ttf in Resources */,
 				A1D2EDCA241841F800024CD3 /* LaunchScreen.storyboard in Resources */,
 				A1D2EDF92418457800024CD3 /* GoogleService-Info.plist in Resources */,
+				A1D2EE1D24184DC300024CD3 /* Lato-Regular.ttf in Resources */,
 				A1D2EDC7241841F800024CD3 /* Assets.xcassets in Resources */,
 				A1D2EDC5241841F500024CD3 /* Main.storyboard in Resources */,
 			);
@@ -331,9 +360,12 @@
 				A1D2EDEF2418456500024CD3 /* CustomVideoPlayer.swift in Sources */,
 				A1D2EDEB2418456500024CD3 /* LoadingButton.swift in Sources */,
 				A1D2EDEC2418456500024CD3 /* Window.swift in Sources */,
+				A1AB6C54241C44DD00323E75 /* OnboardingController.swift in Sources */,
 				A1D2EDF12418456500024CD3 /* HomeController.swift in Sources */,
 				A1D2EDF52418456500024CD3 /* LoginView.swift in Sources */,
+				A1AB6C56241C465000323E75 /* OnboardingView.swift in Sources */,
 				A1D2EDC2241841F500024CD3 /* ViewController.swift in Sources */,
+				A179066B241991FF00A169C2 /* Image.swift in Sources */,
 				A1D2EDED2418456500024CD3 /* Device.swift in Sources */,
 				A1D2EDBE241841F500024CD3 /* AppDelegate.swift in Sources */,
 				A1D2EDF72418456500024CD3 /* ViewControllerView.swift in Sources */,

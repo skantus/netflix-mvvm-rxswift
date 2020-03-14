@@ -7,9 +7,9 @@ extension HomeController {
         styler.cellStyle = .card
 
         addChild(appBar.headerViewController)
-        appBar.headerViewController.headerView.backgroundColor = .white
+        appBar.headerViewController.headerView.backgroundColor = .black
         appBar.headerViewController.headerView.trackingScrollView = self.collectionView
-        appBar.navigationBar.tintColor = .black
+        appBar.navigationBar.tintColor = .white
        
         appBar.addSubviewsToParent()
    
@@ -22,7 +22,7 @@ extension HomeController {
                                                           style: .plain,
                                                           target: self,
                                                           action: nil)
-        navigationItem.leftBarButtonItem?.tintColor = .white
+        navigationItem.leftBarButtonItem?.tintColor = .black
     }
     
     func configurePlayer() {
@@ -31,18 +31,15 @@ extension HomeController {
           
         let videoUrl = URL(string: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")
         // https://bitdash-a.akamaihd.net/content/sintel/subtitles/subtitles_fr.vtt
-        // https://www.domestika.org/api/v2/video_item_srts/1392.vtt
+        // https://www.domain.com/api/v2/video_item_/xyz.vtt
         let vttURL = URL(string: "https://bitdash-a.akamaihd.net/content/sintel/subtitles/subtitles_fr.vtt")!
     
-        let token: String = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJqdGkiOiI0NzA3OGExNS0wMjJmLTRkYjQtYTE1Zi04NDJlZDdmYWY4MzUiLCJ1c2VyIjp7ImlkIjoxMjExNTQ5LCJlbWFpbCI6InNyc2thbnR1c0BnbWFpbC5jb20ifX0.U3TYjh_np9aV_qoVpXHnAFrz3hqwoSrksYOkhfpNUNanMZCouN_rrdHWbEefY6KZolaMsHshM4GssbkJ88ZAKA"
-    
-        let header = [
+        // let token: String = "xyz"
+        /* let header = [
             "content-type": "application/json",
             "authorization": "Bearer \(token)"
-        ]
-    
-        let options = ["AVURLAssetHTTPHeaderFieldsKey": header]
-        
+        ] */
+        // let options = ["AVURLAssetHTTPHeaderFieldsKey": header]
         let asset = BMPlayerResource(name: "Google ChromeCast",
                                      definitions: [BMPlayerResourceDefinition(url: videoUrl!, definition: "480p"/*, options: options*/)],
                                           cover: nil,
@@ -50,6 +47,8 @@ extension HomeController {
           
         player.setVideo(resource: asset)
     
+        player.pause()
+        
         player.snp.makeConstraints { (make) in
             make.top.equalTo(view).offset(100)
             make.left.right.equalTo(view)
