@@ -14,7 +14,7 @@ class ViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        // view.backgroundColor = .black
+
         navigationController?.setNavigationBarHidden(true, animated: animated)
         self.setNeedsStatusBarAppearanceUpdate()
         

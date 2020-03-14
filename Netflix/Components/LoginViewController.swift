@@ -24,8 +24,6 @@ class LoginViewController: UIViewController {
             return
         }
         
-        signInButton().loadingIndicator(true)
-        
         Auth.auth().signIn(withEmail: "j@pulse.com", password: "12345678") { [weak self] authResult, error in
             if (error != nil) {
                 self?.showAlert("\(error?.localizedDescription ?? "Unknow error")")

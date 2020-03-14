@@ -46,16 +46,12 @@ extension HomeController {
                                           subtitles: BMSubtitles(url: vttURL))
           
         player.setVideo(resource: asset)
-    
         player.pause()
-        
         player.snp.makeConstraints { (make) in
             make.top.equalTo(view).offset(100)
             make.left.right.equalTo(view)
             make.height.equalTo(player.snp.width).multipliedBy(9.0 / 16.0).priority(750)
         }
-
-        // Back button event
         player.backBlock = { [unowned self] (isFullScreen) in
             if isFullScreen == true { return }
             let _ = self.navigationController?.popViewController(animated: true)

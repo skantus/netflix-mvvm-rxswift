@@ -1,7 +1,7 @@
 import UIKit
 import BMPlayer
 
-class Player: UIView {
+class CustomBMPlayer: UIView {
     
     var textTest: String?
     
@@ -28,15 +28,12 @@ class Player: UIView {
         // https://www.hosting/1392.vtt
         let vttURL = URL(string: "https://bitdash-a.akamaihd.net/content/sintel/subtitles/subtitles_fr.vtt")!
     
-        let token: String = "xyz"
-    
-        let header = [
+        // let token: String = "xyz"
+        /* let header = [
             "content-type": "application/json",
             "authorization": "Bearer \(token)"
-        ]
-    
-        let options = ["AVURLAssetHTTPHeaderFieldsKey": header]
-        
+        ] */
+        // let options = ["AVURLAssetHTTPHeaderFieldsKey": header]
         let asset = BMPlayerResource(name: "Google ChromeCast",
                                      definitions: [BMPlayerResourceDefinition(url: videoUrl!, definition: "480p"/*, options: options*/)],
                                           cover: nil,

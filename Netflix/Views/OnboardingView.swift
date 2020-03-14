@@ -19,7 +19,6 @@ extension OnboardingController {
     }
     
     func onboardingView() -> UIView {
-        // MARK: --- First page ---
         let firstPage = OnboardingContentViewController(title: "¿Quieres suscribirte a Netflix?", body: "No puede suscribirte a Netflix en la app. Sabemos que no es ideal. Una vez seas miembro, puedes comenzar a ver Netflix en la app.", image: nil, buttonText: nil) { () -> Void in }
         
         firstPage.topPadding = view.bounds.width / 2 + 100
@@ -29,28 +28,24 @@ extension OnboardingController {
         let image = UIImage(named: "onboarding1")
         firstPage.view.backgroundColor = UIColor(patternImage: image!)
 
-        // MARK: --- Second page ---
         let secondPage = OnboardingContentViewController(title: "Tú decides cómo lo ves", body: "En tu teléfono, tablet, computadora y TV sin costo extra.", image: UIImage(named: "onboarding2"), buttonText: nil) { () -> Void in }
         
         secondPage.topPadding = view.bounds.width / 3
         secondPage.titleLabel.font = UIFont.boldSystemFont(ofSize: 33.0)
         secondPage.bodyLabel.font = UIFont.systemFont(ofSize: 20.0)
         
-        // MARK: --- Third page ---
         let thirdPage = OnboardingContentViewController(title: "Descarga y listo", body: "Disfruta online tus películas y programas favoritos en cualquier lugar.", image: UIImage(named: "onboarding3"), buttonText: nil) { () -> Void in }
         
         thirdPage.topPadding = view.bounds.width / 3
         thirdPage.titleLabel.font = UIFont.boldSystemFont(ofSize: 33.0)
         thirdPage.bodyLabel.font = UIFont.systemFont(ofSize: 20.0)
         
-        // MARK: --- Fourth page ---
         let fourthPage = OnboardingContentViewController(title: "Sin contratos molestos", body: "Puedes cancelar cuando quieras", image: UIImage(named: "onboarding4"), buttonText: nil) { () -> Void in }
         
         fourthPage.topPadding = view.bounds.width / 3
         fourthPage.titleLabel.font = UIFont.boldSystemFont(ofSize: 33.0)
         fourthPage.bodyLabel.font = UIFont.systemFont(ofSize: 20.0)
         
-        // MARK: --- Parent ---
         onboardingVC = OnboardingViewController(backgroundImage: nil, contents: [firstPage, secondPage, thirdPage, fourthPage])
         onboardingVC.shouldFadeTransitions = true
         onboardingVC.pageControl.currentPageIndicatorTintColor = .systemRed

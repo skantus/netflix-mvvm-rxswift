@@ -9,13 +9,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
-        
-        window?.rootViewController?.view.backgroundColor = .black
-        
+
         // MARK: Build the main UIView programmatically
         let viewController = ViewController()
         let navigationController = UINavigationController(rootViewController: viewController)
-
+        navigationController.view.backgroundColor = .black
+        
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()

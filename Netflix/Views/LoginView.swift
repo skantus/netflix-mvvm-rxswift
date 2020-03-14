@@ -48,7 +48,7 @@ extension LoginViewController {
     }
     
     func signInButton() -> UIButton {
-        let button = LoadingButton()
+        let button = UIButton()
         button.frame = CGRect(x: 0, y: 0, width: view!.bounds.width * 0.9, height: 50)
         button.backgroundColor = .red
         button.titleLabel?.font = UIFont(name: "Arial", size: 15)
@@ -71,11 +71,7 @@ extension LoginViewController {
         navBar.barTintColor = .black
         navBar.isTranslucent = false
         let navigationItem = UINavigationItem(title: "")
-        
-        // let icon: UIImage = UIImage(named: "iconBack")!
-        // let buttonItem = UIBarButtonItem(image: icon, style: UIBarButtonItem.Style.done, target: nil, action: #selector(goBack))
-        // let buttonItem = UIBarButtonItem(title: "Go back", style: UIBarButtonItem.Style.done, target: self, action: #selector(goBack))
-        
+    
         navigationItem.leftBarButtonItem  = UIBarButtonItem(barButtonSystemItem: .cancel ,target: nil, action: #selector(goBack))
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Ayuda", style: .plain, target: self, action: nil)
         

@@ -1,7 +1,7 @@
 import UIKit
 import AVFoundation
 
-class CustomVideoPlayer: UIViewController {
+class CustomAVPlayer: UIViewController {
     
     var player: AVPlayer?
     var playerItem:AVPlayerItem?
