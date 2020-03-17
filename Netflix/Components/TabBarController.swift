@@ -6,20 +6,24 @@ class TabBarController: UITabBarController {
         view.backgroundColor = .black
         
         let tabItemOne = UITabBarItem()
-        tabItemOne.title = "Home"
+        tabItemOne.title = "Gallery"
         tabItemOne.image = UIImage(named: "home")
-        
-        let tabControllerOne = HomeController()
+        let tabControllerOne = GalleryController()
         tabControllerOne.tabBarItem = tabItemOne
         
         let tabItemTwo = UITabBarItem()
-        tabItemTwo.title = "Downloads"
-        tabItemTwo.image = UIImage(named: "downloads")
-        
-        let tabControllerTwo = DownloadsController()
+        tabItemTwo.title = "Video"
+        tabItemTwo.image = UIImage(named: "home")
+        let tabControllerTwo = HomeController()
         tabControllerTwo.tabBarItem = tabItemTwo
         
-        self.setViewControllers([tabControllerOne, tabControllerTwo], animated: true)
+        let tabItemThree = UITabBarItem()
+        tabItemThree.title = "Downloads"
+        tabItemThree.image = UIImage(named: "downloads")
+        let tabControllerThree = DownloadsController()
+        tabControllerThree.tabBarItem = tabItemThree
+        
+        self.setViewControllers([tabControllerOne, tabControllerTwo, tabControllerThree], animated: true)
     }
     
 }
