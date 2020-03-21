@@ -1,6 +1,6 @@
 # Netflix CLONE 🍫
 
-Netflix clone made in Swift and Firebase.
+Netflix clone written in Swift and Firebase.
 
 <img src="https://github.com/skantus/netflix-ios/blob/master/sources/s1.png" />
 
