@@ -164,8 +164,8 @@
 				A1AB6C53241C44DD00323E75 /* OnboardingController.swift */,
 				A1D2EDE52418456400024CD3 /* LoginViewController.swift */,
 				A1D2EDE32418456400024CD3 /* HomeController.swift */,
-				A1D2EDE42418456400024CD3 /* DownloadsController.swift */,
 				A1AB6C71241D864200323E75 /* GalleryController.swift */,
+				A1D2EDE42418456400024CD3 /* DownloadsController.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -498,6 +498,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AH3HF967DB;
 				INFOPLIST_FILE = Netflix/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -517,6 +518,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AH3HF967DB;
 				INFOPLIST_FILE = Netflix/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

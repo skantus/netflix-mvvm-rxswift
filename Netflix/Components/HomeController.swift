@@ -10,8 +10,6 @@ class HomeController: MDCCollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
-        // self.tabBarController?.tabBar.isHidden = false
         setupContentView()
     }
     

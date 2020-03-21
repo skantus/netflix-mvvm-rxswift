@@ -3,23 +3,24 @@ import UIKit
 class TabBarController: UITabBarController {
     
     override func viewDidLoad() {
-        view.backgroundColor = .black
+        UITabBar.appearance().barTintColor = .black
+        UITabBar.appearance().tintColor = .white
         
         let tabItemOne = UITabBarItem()
-        tabItemOne.title = "Gallery"
-        tabItemOne.image = UIImage(named: "home")
+        tabItemOne.title = "Home"
+        tabItemOne.image = UIImage(named: "Stores")
         let tabControllerOne = GalleryController()
         tabControllerOne.tabBarItem = tabItemOne
         
         let tabItemTwo = UITabBarItem()
         tabItemTwo.title = "Video"
-        tabItemTwo.image = UIImage(named: "home")
+        tabItemTwo.image = UIImage(named: "Home")
         let tabControllerTwo = HomeController()
         tabControllerTwo.tabBarItem = tabItemTwo
         
         let tabItemThree = UITabBarItem()
         tabItemThree.title = "Downloads"
-        tabItemThree.image = UIImage(named: "downloads")
+        tabItemThree.image = UIImage(named: "Gift")
         let tabControllerThree = DownloadsController()
         tabControllerThree.tabBarItem = tabItemThree
         

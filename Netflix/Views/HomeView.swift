@@ -30,16 +30,8 @@ extension HomeController {
         view.addSubview(player)
           
         let videoUrl = URL(string: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")
-        // https://bitdash-a.akamaihd.net/content/sintel/subtitles/subtitles_fr.vtt
-        // https://www.domain.com/api/v2/video_item_/xyz.vtt
         let vttURL = URL(string: "https://bitdash-a.akamaihd.net/content/sintel/subtitles/subtitles_fr.vtt")!
-    
-        // let token: String = "xyz"
-        /* let header = [
-            "content-type": "application/json",
-            "authorization": "Bearer \(token)"
-        ] */
-        // let options = ["AVURLAssetHTTPHeaderFieldsKey": header]
+
         let asset = BMPlayerResource(name: "Google ChromeCast",
                                      definitions: [BMPlayerResourceDefinition(url: videoUrl!, definition: "480p"/*, options: options*/)],
                                           cover: nil,
@@ -59,7 +51,6 @@ extension HomeController {
     }
     
     func setupContentView() {
-        view.backgroundColor = .white
         configureAppBar()
         configurePlayer()
     }
