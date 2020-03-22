@@ -99,12 +99,12 @@
 		A17742952428171A00F1BC73 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A177429C2428171A00F1BC73 /* Fonts */,
-				A17742962428171A00F1BC73 /* Xibs */,
-				A17742972428171A00F1BC73 /* Storyboards */,
-				A177429A2428171A00F1BC73 /* Assets.xcassets */,
-				A17742A02428171A00F1BC73 /* Info.plist */,
 				A177429B2428171A00F1BC73 /* GoogleService-Info.plist */,
+				A17742A02428171A00F1BC73 /* Info.plist */,
+				A177429A2428171A00F1BC73 /* Assets.xcassets */,
+				A177429C2428171A00F1BC73 /* Fonts */,
+				A17742972428171A00F1BC73 /* Storyboards */,
+				A17742962428171A00F1BC73 /* Xibs */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -148,12 +148,13 @@
 				A17742B12428171A00F1BC73 /* AppDelegate.swift */,
 				A17742BA2428171A00F1BC73 /* SceneDelegate.swift */,
 				A17742A62428171A00F1BC73 /* ViewController.swift */,
-				A17742B72428171A00F1BC73 /* Onboarding */,
-				A17742B42428171A00F1BC73 /* Login */,
-				A17742AF2428171A00F1BC73 /* Tabbar */,
-				A17742A32428171A00F1BC73 /* Home */,
-				A17742AC2428171A00F1BC73 /* Gallery */,
 				A17742B22428171A00F1BC73 /* Downloads */,
+				A17742AC2428171A00F1BC73 /* Gallery */,
+				A17742A32428171A00F1BC73 /* Home */,
+				A17742B42428171A00F1BC73 /* Login */,
+				A17742B72428171A00F1BC73 /* Onboarding */,
+				A17742AF2428171A00F1BC73 /* Tabbar */,
+				A17742A72428171A00F1BC73 /* Video */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -195,7 +196,6 @@
 		A17742AC2428171A00F1BC73 /* Gallery */ = {
 			isa = PBXGroup;
 			children = (
-				A17742A72428171A00F1BC73 /* Video */,
 				A17742AD2428171A00F1BC73 /* GalleryController.swift */,
 				A17742AE2428171A00F1BC73 /* GalleryView.swift */,
 			);
