@@ -15,23 +15,11 @@ class GalleryController: UIViewController, UICollectionViewDelegate, UICollectio
         view.addSubview(logo())
     }
 
-    func logo() -> UIView {
-        let img = UIImageView()
-        img.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
-        img.contentMode = .scaleAspectFit
-        img.clipsToBounds = true
-        img.image = UIImage(named: "logo")
-        img.center.x = 70
-        img.center.y = 70
-        return img
-    }
-
     let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
         
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        // cv.backgroundColor = .black
         return cv
     }()
 
@@ -43,8 +31,10 @@ class GalleryController: UIViewController, UICollectionViewDelegate, UICollectio
         collectionView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
     }
 
+    let series = ["Prison Break", "Breaking bad", "Game of thrones", "La casa de papel", "Toy Boy", "Black mirror"]
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return series.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -52,16 +42,15 @@ class GalleryController: UIViewController, UICollectionViewDelegate, UICollectio
         
         cell.backgroundColor = .white
         cell.layer.cornerRadius = 5
-        cell.layer.shadowOpacity = 3
         
-        cell.imageView.image = UIImage(named: "logo")
-        cell.textLabel.text = "New Film"
+        cell.imageView.image = UIImage(named: "SeasonalGiftCard\(indexPath.item + 1)")
+        cell.textLabel.text = series[indexPath.item]
 
         return cell
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.bounds.width - 20, height: 200)
+        return CGSize(width: view.bounds.width - 20, height: 235)
     }
 
 }
@@ -85,24 +74,25 @@ class CustomeCell: UICollectionViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
-        label.textColor = .black
+        label.textColor = .white
+        label.font = UIFont(name: "Arial", size: 18)
         return label
     }()
     
     
-    func  setupView(){
+    func setupView(){
         addSubview(imageView)
         addSubview(textLabel)
 
         imageView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         imageView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
         imageView.heightAnchor.constraint(equalToConstant: 100).isActive = true
-        imageView.widthAnchor.constraint(equalToConstant: 100).isActive = true
+        imageView.widthAnchor.constraint(equalToConstant: self.bounds.width).isActive = true
         
-        textLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-        textLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 5).isActive = true
-        textLabel.heightAnchor.constraint(equalToConstant: 15).isActive = true
-        textLabel.widthAnchor.constraint(equalToConstant: 100).isActive = true
+        // textLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        // textLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 5).isActive = true
+        textLabel.heightAnchor.constraint(equalToConstant: 20).isActive = true
+        textLabel.widthAnchor.constraint(equalToConstant: 200).isActive = true
     }
 
     required init?(coder aDecoder: NSCoder) {
