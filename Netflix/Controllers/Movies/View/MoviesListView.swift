@@ -17,14 +17,14 @@ extension MoviesListController: UICollectionViewDelegate, UICollectionViewDataSo
         view.addSubview(collectionView)
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.register(CustomMovieCell.self, forCellWithReuseIdentifier: "cell")
+        collectionView.register(CustomMovieCell.self, forCellWithReuseIdentifier: cellId)
         setupCollectionConstraints()
     }
     
     func setupCollectionConstraints() {
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100).isActive = true
-        collectionView.heightAnchor.constraint(equalToConstant: view.bounds.height).isActive = true
+        collectionView.heightAnchor.constraint(equalToConstant: 300).isActive = true
         collectionView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         collectionView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
     }
@@ -34,20 +34,19 @@ extension MoviesListController: UICollectionViewDelegate, UICollectionViewDataSo
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell  = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CustomMovieCell
+        let cell  = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! CustomMovieCell
         
         cell.backgroundColor = .white
         cell.layer.cornerRadius = 5
         
         cell.imageView.imageFromServerUrl(urlString: "\(Constants.URL.urlImages+self.movies[indexPath.row].image)", placeHolderImage: UIImage(named: "placeholder-image")!)
         cell.textLabel.text = movies[indexPath.row].title
-        // cell.description.text = movies[indexPath.row].sinopsis
         
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.bounds.width - 20, height: 340)
+        return CGSize(width: 200, height: 300)
     }
     
     // MARK: Logo

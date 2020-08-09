@@ -43,7 +43,6 @@ class NetworkManager {
             return Disposables.create {
                 session.finishTasksAndInvalidate()
             }
-            
         }
     }
     

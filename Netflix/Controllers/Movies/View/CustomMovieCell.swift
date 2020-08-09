@@ -38,10 +38,9 @@ class CustomMovieCell: UICollectionViewCell {
         addSubview(imageView)
         addSubview(textLabel)
         
-        textLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-        
+        // textLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         imageView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-        imageView.topAnchor.constraint(equalTo: textLabel.bottomAnchor, constant: 5).isActive = true
+        // imageView.topAnchor.constraint(equalTo: textLabel.bottomAnchor, constant: 0).isActive = true
     }
     
     required init?(coder aDecoder: NSCoder) {
