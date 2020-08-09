@@ -16,7 +16,7 @@ extension LoginViewController {
     func emailTextField() -> UITextField {
         emailText.frame = CGRect(x: 0, y: 0, width: self.view!.bounds.width * 0.9, height: 50)
         emailText.placeholder = "Email"
-        emailText.text = "j@pulse.com"
+        emailText.text = "net@flix.com"
         emailText.autocapitalizationType = .none
         emailText.font = UIFont.systemFont(ofSize: 17)
         emailText.borderStyle = UITextField.BorderStyle.roundedRect
@@ -33,12 +33,12 @@ extension LoginViewController {
     func passwordTextField() -> UITextField {
        passwordText.frame = CGRect(x: 0, y: 0, width: self.view!.bounds.width * 0.9, height: 50)
        passwordText.placeholder = "Password"
-       passwordText.text = "123456768"
+       passwordText.text = "123456"
        passwordText.font = UIFont.systemFont(ofSize: 17)
        passwordText.borderStyle = UITextField.BorderStyle.roundedRect
        passwordText.autocorrectionType = UITextAutocorrectionType.no
        passwordText.keyboardType = UIKeyboardType.default
-        passwordText.returnKeyType = UIReturnKeyType.send
+       passwordText.returnKeyType = UIReturnKeyType.send
        passwordText.clearButtonMode = UITextField.ViewMode.whileEditing
        passwordText.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
        passwordText.isSecureTextEntry = true

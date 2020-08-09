@@ -6,6 +6,9 @@ target 'Netflix' do
   use_frameworks!
 
   # Pods for Netflix
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'SnapKit'
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'

@@ -952,6 +952,12 @@ PODS:
   - Onboard (2.3.3)
   - PromisesObjC (1.2.8)
   - Protobuf (3.11.4)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
   - SnapKit (5.0.1)
 
 DEPENDENCIES:
@@ -967,6 +973,9 @@ DEPENDENCIES:
   - GoogleSignIn
   - MaterialComponents
   - Onboard
+  - RxCocoa
+  - RxSwift
+  - SnapKit
 
 SPEC REPOS:
   trunk:
@@ -1011,6 +1020,9 @@ SPEC REPOS:
     - Onboard
     - PromisesObjC
     - Protobuf
+    - RxCocoa
+    - RxRelay
+    - RxSwift
     - SnapKit
 
 SPEC CHECKSUMS:
@@ -1055,8 +1067,11 @@ SPEC CHECKSUMS:
   Onboard: 4d6e943e20bdd6bc229df967a347dd7514bc2a6f
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
   Protobuf: 176220c526ad8bd09ab1fb40a978eac3fef665f7
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: f0c7f2b45ec890cb77a95ba0a6c428fe91d06f58
+PODFILE CHECKSUM: ced6cf6868ffaad5caeb2e1329690f5658344ac6
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.3
