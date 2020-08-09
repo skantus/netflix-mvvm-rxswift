@@ -30,6 +30,6 @@ class TabBarController: UITabBarController {
         let tabControllerThree = DownloadsController()
         tabControllerThree.tabBarItem = tabItemThree
         
-        self.setViewControllers([tabControllerOne, tabControllerTwo, tabControllerThree], animated: true)
+        self.setViewControllers([tabControllerOne, tabControllerTwo], animated: true)
     }
 }
