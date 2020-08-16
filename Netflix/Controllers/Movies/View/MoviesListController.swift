@@ -3,10 +3,14 @@ import RxSwift
 
 class MoviesListController: UIViewController {
     
+    var logo: UIImageView!
+    var sectionTitle: UILabel!
+    
     let moviesViewModel = MoviesViewModel()
     let cellId = "movieCell"
     let disposeBag = DisposeBag()
     var movies = [Movie]()
+    var filteredMovies = [Movie]()
     
     let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -18,8 +22,12 @@ class MoviesListController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .black
-        view.addSubview(logo())
+        
         configureCollectionView()
+        setupCollectionConstraints()
+        createLogo()
+        createSectionTitle()
+        
         getData()
     }
     

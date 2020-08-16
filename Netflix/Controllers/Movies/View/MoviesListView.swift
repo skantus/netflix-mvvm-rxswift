@@ -18,14 +18,13 @@ extension MoviesListController: UICollectionViewDelegate, UICollectionViewDataSo
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(CustomMovieCell.self, forCellWithReuseIdentifier: cellId)
-        setupCollectionConstraints()
     }
     
     func setupCollectionConstraints() {
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100).isActive = true
+        collectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 160).isActive = true
         collectionView.heightAnchor.constraint(equalToConstant: 300).isActive = true
-        collectionView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        collectionView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 25).isActive = true
         collectionView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
     }
     
@@ -50,14 +49,29 @@ extension MoviesListController: UICollectionViewDelegate, UICollectionViewDataSo
     }
     
     // MARK: Logo
-    func logo() -> UIView {
-        let img = UIImageView()
-        img.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
-        img.contentMode = .scaleAspectFit
-        img.clipsToBounds = true
-        img.image = UIImage(named: "logo")
-        img.center.x = 70
-        img.center.y = 70
-        return img
+    func createLogo() {
+        logo = UIImageView()
+        logo.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+        logo.contentMode = .scaleAspectFit
+        logo.clipsToBounds = true
+        logo.image = UIImage(named: "logo")
+        logo.center.x = 70
+        logo.center.y = 70
+        view.addSubview(logo)
+    }
+        
+    func createSectionTitle() {
+        sectionTitle = UILabel()
+        sectionTitle.translatesAutoresizingMaskIntoConstraints = false
+        sectionTitle.textAlignment = .center
+        sectionTitle.textColor = .white
+        sectionTitle.font = UIFont(name: "Avenir Book", size: 21)
+        sectionTitle.text = "Popular"
+        view.addSubview(sectionTitle)
+        
+        sectionTitle.snp.makeConstraints {
+            $0.top.equalTo(logo).offset(100)
+            $0.left.equalTo(logo).offset(5)
+        }
     }
 }
