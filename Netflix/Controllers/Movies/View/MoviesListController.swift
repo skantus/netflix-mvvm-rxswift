@@ -35,8 +35,7 @@ class MoviesListController: UIViewController {
         return moviesViewModel.getListMoviesData()
             .subscribeOn(MainScheduler.instance)
             .observeOn(MainScheduler.instance)
-            .subscribe(
-                onNext: { movies in
+            .subscribe(onNext: { movies in
                     self.movies = movies
                     self.reloadMoviesList()
             }, onError: {error in
